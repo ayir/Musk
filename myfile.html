@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <link href='style1.css' rel='stylesheet'>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+ 
+  <title>Suppliers</title>
+  <script src="jquery-1.7.2.js"></script>
+    <script src="app1.js"></script>
+</head>
+<body>
+<div class="background">
+ <div class ="inner_background">
+ <!-- First block -->
+<div class="heading">
+     KYC Company
+  </div>
+  <div class="inner_first">
+    <div class="PAN-heading">PAN Card</div>
+     <div class="dotted">       
+     </div> 
+     <form action="">
+     <div class="pan">
+     <input type="text" id="pan" name="pan" placeholder="PAN No."  required pattern="[a-zA-Z0-9]+"/>
+     </div>
+     <div class="c_name">
+     <input type="text" id="c_name" name="c_name" placeholder="Company Name" required pattern="[a-zA-Z0-9\s]+"/>
+    </div>
+     <div class="date">
+     <input required="" type="text" id="date" placeholder="Date of Incorporation" onfocus="(this.type='date')"  onfocusout="(this.type='text')"/>
+     
+     </div>
+     <input type="file" name="file" id="file">
+     <div class="button">UPLOAD</div>
+     <div id="filedrag">Or drag and drop file</div>
+     </form>
+
+  </div>
+  <!-- Second block -->
+  <div class="inner_second">
+    <div class="TIN-heading">TIN</div>
+    <form action="">
+      <div class="tin">
+      <input type="text" id="tin" name="tin" placeholder="TIN No."  required pattern="[a-zA-Z0-9]+"/>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Third block -->
+   <div class="inner_third">
+    <div class="Address_proof-heading">Address Proof</div>
+    <form action="">
+    <div class="electricity">
+   <input id="electricity"type="radio" name="chooseone" value="Electricity Bill" checked="checked"><label for="Electricity Bill"> Electricity Bill</label></div>
+   <div class="water">
+   <input id="water"type="radio" name="chooseone" value="Water Bill"><label for="Water Bill">Water Bill</label></div>
+   <div class="telephone">
+   <input id="telephone"type="radio" name="chooseone" value="Telephone Bill"><label for="Telephone Bill">Telephone Bill</label></div>
+   </form>
+  </div>
+  </div>
+  </body>
+  </html>
